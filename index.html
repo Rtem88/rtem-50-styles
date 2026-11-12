@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta name="description" content="50 візуальних стилів для AI-зображень. Приклади до і після, готові промпти та окремий сюжет для кожного ефекту. Колекція RTEM Design.">
+  <title>50 стилів · RTEM Design</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23FF6A28'/%3E%3Cpath d='M9 24V8h8a5 5 0 0 1 1 10l5 6h-6l-5-6v6zm3-10h4a1 1 0 0 0 0-2h-4z' fill='%230a0a0b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="styles.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="#" aria-label="RTEM Design, головна">RTEM<span>®</span></a><span class="edition">DESIGN RESOURCES / 001</span><a class="social" href="https://www.instagram.com/rtem_design/" target="_blank" rel="noopener noreferrer">@rtem_design <span aria-hidden="true">↗</span></a></header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="status-dot"></span> ТВОЯ КОЛЕКЦІЯ AI-ПРОМПТІВ</div>
+      <h1 id="page-title"><span>50</span> <span class="accent">СТИЛІВ</span><span class="hero-star" aria-hidden="true">✳</span></h1>
+      <div class="hero-bottom"><p>Один промпт. Новий погляд.<br><span>Обирай стиль, додавай своє зображення та експериментуй.</span></p><a class="jump" href="#collection">ДИВИТИСЯ КОЛЕКЦІЮ <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="collection" id="collection" aria-label="Колекція 50 стилів">
+      <div class="toolbar"><div class="filters" role="group" aria-label="Фільтр за категорією"></div><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Знайти стиль…" aria-label="Знайти стиль"></label></div>
+      <div class="collection-info"><span id="result-count" aria-live="polite">50 СТИЛІВ</span><span>ВІДКРИЙ КАРТКУ, ЩОБ СКОПІЮВАТИ ПРОМПТ <span aria-hidden="true">↙</span></span></div>
+      <div class="grid" id="grid"></div>
+      <div id="empty" class="empty" hidden><p>Такого стилю не знайшлося.</p><button id="reset" class="text-button">Показати всі 50</button></div>
+    </section>
+    <section class="how" aria-labelledby="how-title"><div><div class="eyebrow">ВІД ІДЕЇ ДО ЗОБРАЖЕННЯ</div><h2 id="how-title">Спробуй на своєму.</h2></div><ol><li><span>01</span><div><h3>Обери стиль</h3><p>Порівняй оригінал із результатом. У кожної картки свій сюжет.</p></div></li><li><span>02</span><div><h3>Скопіюй промпт</h3><p>Відкрий картку та натисни кнопку під описом.</p></div></li><li><span>03</span><div><h3>Додай своє зображення</h3><p>Завантаж фото в генератор, що підтримує редагування зображень, і встав промпт.</p></div></li></ol></section>
+  </main>
+  <footer><a class="brand" href="#">RTEM<span>®</span></a><p>50 способів подивитися інакше.</p><a href="https://www.instagram.com/rtem_design/" target="_blank" rel="noopener noreferrer">Більше про дизайн ↗</a></footer>
+  <dialog id="detail" aria-labelledby="detail-title"><button class="close" id="close" aria-label="Закрити">✕</button><div class="detail-layout"><div class="compare" id="compare"><div class="before"><img id="before-image" alt="Оригінал"></div><div class="after" id="after"><img id="after-image" alt="Результат застосування стилю"></div><div class="compare-line" id="compare-line"></div><div class="compare-labels"><span>ДО</span><span>ПІСЛЯ</span></div><label class="slider-label">Перетягни, щоб порівняти<input type="range" id="comparison" min="0" max="100" value="50" aria-label="Порівняння оригіналу та результату"></label></div><div class="detail-content"><div class="detail-eyebrow"><span id="detail-number"></span><span id="detail-tag"></span></div><h2 id="detail-title"></h2><p id="detail-description"></p><div class="prompt-label">ПРОМПТ <span>EN</span></div><pre id="prompt"></pre><button id="copy" class="copy">Скопіювати промпт <span aria-hidden="true">↗</span></button><p class="tip">Додай своє фото разом із промптом. Результат залежить від вихідного зображення та генератора.</p><div class="detail-nav"><button id="previous" aria-label="Попередній стиль">← Попередній</button><button id="next" aria-label="Наступний стиль">Наступний →</button></div></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
